@@ -6,6 +6,7 @@ import com.pthienquan1.productservice.model.Product;
 import com.pthienquan1.productservice.service.ProductService;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,6 +22,7 @@ import java.util.List;
 @AllArgsConstructor
 public class ProductController {
     private final ProductService productService;
+
 
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)

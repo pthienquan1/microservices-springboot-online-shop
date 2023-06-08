@@ -5,7 +5,10 @@ import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+import pthienquan1.inventoryservice.dto.InventoryResponse;
 import pthienquan1.inventoryservice.service.InventoryService;
+
+import java.util.List;
 
 /**
  * Created by quan0
@@ -21,7 +24,7 @@ public class InventoryController {
 
     @GetMapping("/{sku-code}")
     @ResponseStatus(HttpStatus.OK)
-    public boolean isStock(@PathVariable("sku-code") String skuCode){
+    public List<InventoryResponse> isStock(@RequestParam List<String> skuCode){
         return inventoryService.isStock(skuCode);
 
     }

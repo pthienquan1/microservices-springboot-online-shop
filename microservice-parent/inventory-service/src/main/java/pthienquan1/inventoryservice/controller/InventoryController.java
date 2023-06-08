@@ -22,7 +22,7 @@ public class InventoryController {
 
     private final InventoryService inventoryService;
 
-    @GetMapping("/{sku-code}")
+    @GetMapping()
     @ResponseStatus(HttpStatus.OK)
     public List<InventoryResponse> isStock(@RequestParam List<String> skuCode){
         return inventoryService.isStock(skuCode);

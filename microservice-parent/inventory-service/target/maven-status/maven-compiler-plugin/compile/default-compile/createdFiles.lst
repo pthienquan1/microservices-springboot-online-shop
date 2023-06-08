@@ -1,0 +1,5 @@
+pthienquan1\inventoryservice\controller\InventoryController.class
+pthienquan1\inventoryservice\InventoryServiceApplication.class
+pthienquan1\inventoryservice\model\Inventory.class
+pthienquan1\inventoryservice\repository\InventoryRepository.class
+pthienquan1\inventoryservice\service\InventoryService.class
